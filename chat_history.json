@@ -1,0 +1,102 @@
+[
+  {
+    "time": "2026-03-20T15:19:51",
+    "role": "assistant",
+    "text": "Hello. AI mode isn’t configured yet—set `OPENAI_API_KEY` or `OPENROUTER_API_KEY` (or add it to your `.env` file) to enable chat responses."
+  },
+  {
+    "time": "2026-03-20T15:19:56",
+    "role": "user",
+    "text": "help"
+  },
+  {
+    "time": "2026-03-20T15:19:56",
+    "role": "assistant",
+    "text": "You can say open google, play skyfall, search for python, news, weather in Mumbai, time, date, note buy milk, add task call mom, list tasks, done task 2, or voice test"
+  },
+  {
+    "time": "2026-03-20T15:19:59",
+    "role": "user",
+    "text": "voice test"
+  },
+  {
+    "time": "2026-03-20T15:19:59",
+    "role": "assistant",
+    "text": "Voice is working. I can hear and speak."
+  },
+  {
+    "time": "2026-03-20T15:20:03",
+    "role": "user",
+    "text": "weather in delhi"
+  },
+  {
+    "time": "2026-03-20T15:20:04",
+    "role": "assistant",
+    "text": "Weather in delhi: Mist, 20 degree celsius, humidity 83 percent"
+  },
+  {
+    "time": "2026-03-20T15:20:06",
+    "role": "user",
+    "text": "list tasks"
+  },
+  {
+    "time": "2026-03-20T15:20:06",
+    "role": "assistant",
+    "text": "Here are your tasks"
+  },
+  {
+    "time": "2026-03-20T15:20:06",
+    "role": "assistant",
+    "text": "1. buy milk (pending)"
+  },
+  {
+    "time": "2026-03-20T15:20:07",
+    "role": "user",
+    "text": "show notes"
+  },
+  {
+    "time": "2026-03-20T15:20:07",
+    "role": "assistant",
+    "text": "You do not have any notes yet"
+  },
+  {
+    "time": "2026-03-20T15:20:11",
+    "role": "user",
+    "text": "hello"
+  },
+  {
+    "time": "2026-03-20T15:20:14",
+    "role": "assistant",
+    "text": "Hello! What would you like to do next—view your tasks again, add a note, or something else?"
+  },
+  {
+    "time": "2026-03-20T15:20:26",
+    "role": "user",
+    "text": "how are you"
+  },
+  {
+    "time": "2026-03-20T15:20:28",
+    "role": "assistant",
+    "text": "I’m doing well—thanks for asking. What would you like to do next: view your tasks, add a note, or something else?"
+  },
+  {
+    "time": "2026-03-20T15:23:50",
+    "role": "user",
+    "text": "hello"
+  },
+  {
+    "time": "2026-03-20T15:23:56",
+    "role": "assistant",
+    "text": "Hello! What would you like to do next—add a note, view your tasks, or something else?"
+  },
+  {
+    "time": "2026-03-20T15:25:09",
+    "role": "user",
+    "text": "hello"
+  },
+  {
+    "time": "2026-03-20T15:25:12",
+    "role": "assistant",
+    "text": "Hello! What would you like to do next—view your tasks, add a note, or something else?"
+  }
+]

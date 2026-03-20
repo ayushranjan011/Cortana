@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cortana AI Console</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="badge">LIVE</span>
+          <h1>Cortana</h1>
+          <p>Voice + AI assistant control deck</p>
+        </div>
+
+        <div class="panel">
+          <h2>Output Mode</h2>
+          <label class="toggle-row">
+            <span>Voice Output</span>
+            <input id="voiceToggle" type="checkbox" />
+          </label>
+          <p class="hint">Turn this on if you want spoken replies.</p>
+        </div>
+
+        <div class="panel">
+          <h2>Quick Commands</h2>
+          <div class="quick-grid">
+            <button class="quick" data-cmd="help">Help</button>
+            <button class="quick" data-cmd="voice test">Voice Test</button>
+            <button class="quick" data-cmd="weather in delhi">Weather</button>
+            <button class="quick" data-cmd="news">News</button>
+            <button class="quick" data-cmd="list tasks">Tasks</button>
+            <button class="quick" data-cmd="show notes">Notes</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>AI Settings</h2>
+          <form id="settingsForm" class="settings-form">
+            <label>
+              <span>Model</span>
+              <input id="modelInput" type="text" placeholder="openai/gpt-5.2" />
+            </label>
+            <label>
+              <span>Max Tokens</span>
+              <input id="maxTokensInput" type="number" min="64" max="4096" step="1" />
+            </label>
+            <label>
+              <span>Site URL (optional)</span>
+              <input id="siteUrlInput" type="text" placeholder="https://your-site.example" />
+            </label>
+            <label>
+              <span>Site Name (optional)</span>
+              <input id="siteNameInput" type="text" placeholder="Your Site" />
+            </label>
+            <button type="submit" class="save-btn">Save Settings</button>
+          </form>
+          <p id="settingsStatus" class="hint">Load and save OpenRouter settings.</p>
+        </div>
+      </aside>
+
+      <section class="chat-stage">
+        <header class="chat-header">
+          <div>
+            <h2>Assistant Conversation</h2>
+            <p id="statusText">Ready for your command</p>
+          </div>
+          <div class="signal">
+            <span></span><span></span><span></span>
+          </div>
+        </header>
+
+        <div id="chatStream" class="chat-stream"></div>
+
+        <form id="commandForm" class="composer">
+          <input
+            id="commandInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Type command... e.g. weather in mumbai, add task buy fruits"
+          />
+          <button id="micButton" type="button" class="mic-btn" title="Use microphone">Mic</button>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
