@@ -1,2 +1,15 @@
+[project]
+name = "cortana"
+version = "0.1.0"
+description = "Cortana assistant web app"
+requires-python = ">=3.12"
+dependencies = [
+	"Flask",
+	"openai",
+	"requests",
+	"SpeechRecognition",
+	"pyttsx3",
+]
+
 [tool.vercel]
 entrypoint = "app_ui:app"
